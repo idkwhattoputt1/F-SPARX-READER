@@ -1,6 +1,4 @@
-// F* Sparx: Sparx Reader
-// Made by Zin
-// Heavily recommend SenAI for maths
+
 
 let copiedText = ''; // Store copied text globally
 let lastCheckedTime = 0;
@@ -68,7 +66,7 @@ answerPane.innerHTML = '<strong>Answer:</strong><p id="answerText">No answer yet
 document.body.appendChild(answerPane);
 
 async function queryCohere(question, options, context) {
-    const apiKey = 'tcohk8jCaeM9gr2ALal7FVVVCSJWj5uTJ1kSHOtJ'; // !!!!!~ YOUR API KEY GOES IN THE "KEY-HERE" SECTION !!!!!!
+    const apiKey = 'tcohk8jCaeM9gr2ALal7FVVVCSJWj5uTJ1kSHOtJ'; 
     const response = await fetch('https://api.cohere.ai/generate', {
         method: 'POST',
         headers: {
